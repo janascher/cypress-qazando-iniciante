@@ -1,7 +1,7 @@
 // Descrição de qual funcionalidade a ser testada
-describe('Login', () => {
+describe('Get Elements', () => {
     // Cenários de testes
-    it('Login com sucesso', () => {
+    it('Encontrar elementos', () => {
         // get() -> seleciona elementos
         cy.visit('/').get('.header-logo');
 
