@@ -27,4 +27,26 @@ describe('Interações', () => {
         // Click por cordenadas
         // cy.get('.fa-user').click(100,100, {force: true})
     })
+
+    // O it.only() serve para especificar que somente este teste deve ser executado
+    it('Select', () => {
+        cy.visit('/').get('.header-logo');
+
+        cy.get('.footer_one_widget').contains('Checkout View Two').click();
+
+        // Selecionar um elemento
+        cy.get('#country').select('Colombia');
+    });
+
+     it.only('Checkbox e radio button', () => {
+         cy.visit('/').get('.header-logo');
+
+         cy.get('.footer_one_widget').contains('Checkout View One').click();
+
+         // Selecionar checkbox
+         cy.get('#materialUnchecked').check().uncheck();
+
+        // Selecionar radio button
+         cy.get('#css').check();
+     });
 });
