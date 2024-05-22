@@ -54,6 +54,6 @@ describe('Cadastro de usuário', () => {
         cy.fillPassword(user_data.password);
         cy.saveRegister();
         cy.checkRegisterSucess('Cadastro realizado!', random_name);
-        cy.confirmRegistration();
+        cy.confirmRegister();
     });
 });
