@@ -19,11 +19,14 @@ const elements = {
     },
 };
 
-Cypress.Commands.add('accessRegisterPage', () => {
-    // Acessa a aplicação
-    cy.visit(elements.url.visit).get('.header-logo');
-    // Entra no registro
-    cy.get(elements.links.register).should('be.visible').click();
-    // Verifica se está na página de cadastro
-    cy.get(elements.fields.name).should('be.visible');
-})
+// Método JavaScript
+export default {
+    accessRegisterPage() {
+        // Acessa a aplicação
+        cy.visit(elements.url.visit).get('.header-logo');
+        // Entra no registro
+        cy.get(elements.links.register).should('be.visible').click();
+        // Verifica se está na página de cadastro
+        cy.get(elements.fields.name).should('be.visible');
+    },
+};
