@@ -42,13 +42,15 @@ export default {
 
     checkMessage(message) {
         // Checar mensagem
-        cy.get(elements.messages.error).should('contain', message);
+        cy.get(elements.messages.error).should('be.visible').should('contain', message);
     },
 
     checkRegisterSucess(message, name) {
         // Cadastro concluído
-        cy.get(elements.messages.successTitle).should('contain', message);
-        cy.get(elements.messages.successSubtitle).should('contain', `Bem-vindo ${name}`);
+        cy.get(elements.messages.successTitle).should('be.visible').should('contain', message);
+        cy.get(elements.messages.successSubtitle)
+            .should('be.visible')
+            .should('contain', `Bem-vindo ${name}`);
     },
 
     confirmRegister() {
