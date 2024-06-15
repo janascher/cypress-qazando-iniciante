@@ -3,24 +3,24 @@
 /// <reference types="cypress" />
 // Utilizando a biblioteca Faker para gerar massa de dados
 import { faker } from '@faker-js/faker';
-import home_page from '../support/pages/home_page';
 import register_page from '../support/pages/register_page';
+import commum_page from '../support/pages/commum_page';
 
 const user_data = require('../fixtures/desafio_valid_data.json');
 const user_invalid_data = require('../fixtures/desafio_invalid_data.json');
-// const screens = require('../support/config/viewport_sizes.json');
+const screens = require('../support/config/viewport_sizes.json');
 
 const random_name = faker.person.fullName();
 const random_email = faker.internet.email();
 
-// screens.forEach((element) => {
+screens.forEach((element) => {
     describe('Cadastro de usuário', () => {
         beforeEach('Acessando página de cadastro', () => {
-            // if (element.screen != 'desktop') {
-            //     cy.viewport(element.screen); // Simulação em telas de celulares
-            // }
+            if (element.screen != 'desktop') {
+                cy.viewport(element.screen); // Simulação em telas de celulares
+            }
 
-            home_page.accessRegisterPage();
+            commum_page.accessRegisterPage();
         });
 
         it('Validar campo nome vazio', () => {
@@ -65,4 +65,4 @@ const random_email = faker.internet.email();
             register_page.confirmRegister();
         });
     });
-// });
+});
