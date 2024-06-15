@@ -8,22 +8,22 @@ import register_page from '../support/pages/register_page';
 
 const user_data = require('../fixtures/desafio_valid_data.json');
 const user_invalid_data = require('../fixtures/desafio_invalid_data.json');
-const screens = require('../support/config/viewport_sizes.json');
+// const screens = require('../support/config/viewport_sizes.json');
 
 const random_name = faker.person.fullName();
 const random_email = faker.internet.email();
 
-screens.forEach((element) => {
+// screens.forEach((element) => {
     describe('Cadastro de usuário', () => {
         beforeEach('Acessando página de cadastro', () => {
-            if (element.screen != 'desktop') {
-                cy.viewport(element.screen); // Simulação em telas de celulares
-            }
+            // if (element.screen != 'desktop') {
+            //     cy.viewport(element.screen); // Simulação em telas de celulares
+            // }
 
             home_page.accessRegisterPage();
         });
 
-        it.only('Validar campo nome vazio', () => {
+        it('Validar campo nome vazio', () => {
             register_page.saveRegister();
             register_page.checkMessage('O campo nome deve ser prenchido');
         });
@@ -65,4 +65,4 @@ screens.forEach((element) => {
             register_page.confirmRegister();
         });
     });
-});
+// });
