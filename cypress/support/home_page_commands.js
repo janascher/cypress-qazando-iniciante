@@ -21,7 +21,8 @@ const elements = {
 
 Cypress.Commands.add('accessRegisterPage', () => {
     // Acessa a aplicação
-    cy.visit(elements.url.visit).get('.header-logo');
+    // cy.visit(elements.url.visit).get('.header-logo');
+    cy.visit(elements.url.visit).get('.header-log');
     // Entra no registro
     cy.get(elements.links.register).should('be.visible').click();
     // Verifica se está na página de cadastro
