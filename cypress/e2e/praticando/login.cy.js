@@ -9,7 +9,7 @@ const user_data = require('../../fixtures/desafio_valid_data.json');
 
 const random_email = faker.internet.email();
 
-describe('Login de usuário', () => {
+describe.only('Login de usuário', () => {
     beforeEach('Acessando página de login', () => {
         commum_page.accessLoginPage();
     });
