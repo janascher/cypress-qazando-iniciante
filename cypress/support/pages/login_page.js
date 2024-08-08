@@ -15,7 +15,8 @@ const elements = {
         password: '#password',
     },
     links: {
-        createAccount: '#createAccount',
+        // createAccount: '#createAccount',
+        createAccount: '#createAccountX',
     },
 };
 
