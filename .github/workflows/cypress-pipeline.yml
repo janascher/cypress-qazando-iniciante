@@ -27,5 +27,13 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           record: true
+          spec: cypress/e2e/praticando
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+
+      # upload do relatório do mocha
+      - name: Upload an Individual File
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifact
+          path: cypress/reports/html
