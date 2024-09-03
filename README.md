@@ -3,7 +3,7 @@
 		<img  src="https://github.com/janascher/cypress-qazando-iniciante/assets/79182711/fc2559f8-a64e-43be-b278-4721a78dbb1c"  alt="QAZANDO"  title="QAZANDO"  width="250" />
 	</a>
 	<h1>
-		🚧 Automação de Teste Web com Cypress - Básico 🚧
+		🛠️ Automação de Teste Web com Cypress - Básico 🛠️
 	</h1>
 </div>
 
