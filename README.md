@@ -15,24 +15,26 @@ Repositório dedicado ao meu aprendizado e progresso no curso curso "Automação
 
 O curso abrange os seguintes tópicos:
 
--   Introdução
--   Configuração do ambiente
--   Noções básicas de JavaScript
--   Instalando o Cypress
--   Inspecionando elementos
--   Comandos básicos
--   Asserts
--   Desafio
--   Gestão de dados
--   Page Objects
--   Dicas e utilidades
--   Pratica - Projeto
--   BDD (Behavior Driven Development)
--   Relatórios
--   Git para testers
--   Pipeline - CI/CD
--   Testes de API
--   Chat GPT
+1. **Introdução**
+2. **Configuração do ambiente**
+3. **Noções básicas de JavaScript**
+4. **Instalando o Cypress**
+5. **Inspecionando elementos**
+6. **Comandos básicos**
+7. **Asserts**
+8. **Desafio**
+9. **Gestão de dados**
+10. **Page Objects**
+11. **Dicas e utilidades**
+12. **Prática - Projeto**
+13. **BDD (Behavior Driven Development)**
+    - O código relacionado às aulas de BDD foi organizado em um repositório separado. Você pode acessar este repositório em: [cypress-BDD-qazando-iniciante](https://github.com/janascher/cypress-BDD-qazando-iniciante).
+14. **Relatórios**
+15. **Git para testers**
+16. **Pipeline - CI/CD**
+17. **Testes de API**
+    - De forma similar ao tópico de BDD, o código relacionado aos testes de API foi separado. O repositório dedicado pode ser encontrado em: [cypress-api-test-qazando](https://github.com/janascher/cypress-api-test-qazando).
+18. **Chat GPT**
 
 ## 🦸 Autor
 
